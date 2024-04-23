@@ -70,8 +70,8 @@ public class SecurityConfig {
 
                 .requestMatchers(AUTH_WHITELIST).permitAll()
 
-//                .anyRequest().permitAll()
-                .anyRequest().authenticated()
+                .anyRequest().permitAll()
+//                .anyRequest().authenticated()
             );
 
 

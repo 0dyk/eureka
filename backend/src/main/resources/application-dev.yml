@@ -2,12 +2,12 @@ spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/eureka_db?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Seoul&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true&useSSL=false&allowPublicKeyRetrieval=true
-    username: root
-    password: 1234
+    username: ssafy
+    password: ssafy
 
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
 #    show-sql: true
     properties:
       hibernate:
@@ -71,4 +71,10 @@ springdoc:
 #    path: /
   swagger-ui:
     display-request-duration: true
+
+coolsms:
+  url : https://api.coolsms.co.kr
+  api-key: NCS4JRJYDE5VQXFF
+  api-secret: NIZTMQIUULKHTBSD9XCSZ027QFAJMRS8
+  sender-phone: 01093701938
 
